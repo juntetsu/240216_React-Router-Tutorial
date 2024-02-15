@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 // ルーティングで利用するページをインポート
 import RouterApp from "./components/RouterApp";
+import RouterNav from "./components/RouterNav";
 import TopPage from "./pages/TopPage";
 import AboutPage from "./pages/AboutPage";
 import ArticlePage from "./pages/ArticlePage";
@@ -15,11 +16,13 @@ import ArticlePage from "./pages/ArticlePage";
 const routesLink = createBrowserRouter(
   createRoutesFromElements(
     // トップルートを追加
-    <Route path="/" element={<RouterApp />}>
+    // <Route path="/" element={<RouterApp />}>
+    <Route element={<RouterNav />}>
       {/* <Route path="" element={<TopPage />} /> */}
       <Route index element={<TopPage />} />
       <Route path="about" element={<AboutPage />} />
       <Route path="article" element={<ArticlePage />} />
+      <Route path="article/:id" element={<ArticlePage />} />
     </Route>
   )
 );
