@@ -24,6 +24,11 @@ const RouterParam = () => {
             パラメーター省略の書籍
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/search/react/router/remix">
+            検索結果
+          </NavLink>
+        </li>
       </ul>
 
       <hr />
