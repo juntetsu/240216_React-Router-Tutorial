@@ -9,6 +9,7 @@ import RouterParam from "./components/RouterParam";
 import TopPage from "./pages/TopPage";
 import BookPage from "./pages/BookPage";
 import SearchPage from "./pages/SearchPage";
+import BookQuery from "./pages/BookQuery";
 
 const routesParam = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,8 @@ const routesParam = createBrowserRouter(
 
       {/* :isbnパラメーターを省略可能にした場合 */}
       <Route path="/book/:isbn?" element={<BookPage />} /> 
+      {/* クエリ取得版 */}
+      <Route path="/bookQuery" element={<BookQuery />} /> 
 
       {/* 可変調パラメーターを定義 */}
       <Route path="/search/*" element={<SearchPage />} />

@@ -15,6 +15,11 @@ const RouterParam = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/bookQuery?isbn=978-4-8156-1336-5">
+            これからはじめるVue.js 3実践入門（クエリ取得版）
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/book/978-4-297-13288-0">
             改訂3版 JavaScript本格入門
           </NavLink>
@@ -25,9 +30,7 @@ const RouterParam = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/search/react/router/remix">
-            検索結果
-          </NavLink>
+          <NavLink to="/search/react/router/remix">検索結果</NavLink>
         </li>
       </ul>
 
